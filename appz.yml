@@ -1,7 +1,7 @@
 app:
   name: LogCollectorGL
   code: LCGL
-  notify: appz@cloudbourne.co
+  notify: mniju@ecloudcontrol.com
 
 build:
   version: 3.1
@@ -12,7 +12,7 @@ build:
   image_name: alpha/log-collector-gl
 
 deploy:
-  context: alpha/DEV
+  context: minnaniju/DEV
   replicas: 1
   port:
   - 9000
@@ -32,3 +32,13 @@ properties:
   GRAYLOG_ELASTICSEARCH_HOSTS : http://appz-logcollectores-3-1:9200/
   GRAYLOG_ELASTICSEARCH_DISCOVERY_ENABLED : false
   GRAYLOG_ROOT_PASSWORD_SHA2 : aee6e0898de4b1316dabd00451ebeb3ec9e7fd9c03520497eff2b0a29bfdc776
+  GRAYLOG_TRANSPORT_EMAIL_HOSTNAME: smtp.gmail.com
+  GRAYLOG_TRANSPORT_EMAIL_PORT: 465
+  GRAYLOG_TRANSPORT_EMAIL_USE_AUTH: true
+  GRAYLOG_TRANSPORT_EMAIL_USE_TLS: false
+  GRAYLOG_TRANSPORT_EMAIL_USE_SSL: true
+  GRAYLOG_TRANSPORT_EMAIL_AUTH_USERNAME: sshajahan@ecloudcontrol.com
+  GRAYLOG_TRANSPORT_EMAIL_AUTH_PASSWORD:
+    vault: GRAYLOG_TRANSPORT_EMAIL_AUTH_PASSWORD
+  GRAYLOG_TRANSPORT_EMAIL_SUBJECT_PREFIX: [graylog]
+  GRAYLOG_TRANSPORT_EMAIL_FROM_EMAIL: sshajahan@ecloudcontrol.com

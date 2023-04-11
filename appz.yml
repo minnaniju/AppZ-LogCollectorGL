@@ -9,7 +9,6 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: graylog-5.0
-  image_name: alpha/log-collector-gl
 
 deploy:
   context: minnaniju/DEV
@@ -26,13 +25,10 @@ volumes:
   size: 5Gi
   mode: ReadWriteOnce   
 
-monitor:
-  notify: appzops@cloudbourne.co      
-
 properties:
   revision : 12
-  GRAYLOG_MONGODB_URI : mongodb://appz-logcollectordb-3-1:27017/graylog  
-  GRAYLOG_ELASTICSEARCH_HOSTS : http://appz-logcollectores-3-1:9200/
+  GRAYLOG_MONGODB_URI : mongodb://appz-logcollectordb-5-0:27017/graylog  
+  GRAYLOG_ELASTICSEARCH_HOSTS : http://appz-logcollectores-7.1:9200/
   GRAYLOG_ELASTICSEARCH_DISCOVERY_ENABLED : false
   GRAYLOG_PASSWORD_SECRET:
     vault: GRAYLOG_PASSWORD_SECRET

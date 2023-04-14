@@ -28,7 +28,7 @@ volumes:
 properties:
   revision : 15
   GRAYLOG_MONGODB_URI : mongodb://mongodb-5-0:27017/graylog  
-  GRAYLOG_ELASTICSEARCH_HOSTS : http://elasticsearch-7-1:9200/_cluster/health
+  GRAYLOG_ELASTICSEARCH_HOSTS : http://elasticsearch-7-1:9200/
   GRAYLOG_ELASTICSEARCH_DISCOVERY_ENABLED : false
   GRAYLOG_PASSWORD_SECRET:
     vault: GRAYLOG_PASSWORD_SECRET

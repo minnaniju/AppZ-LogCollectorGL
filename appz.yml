@@ -1,6 +1,6 @@
 app:
   name: GrayLog
-  code: GrayLog
+  code: LCGL
   notify: mniju@ecloudcontrol.com
 
 build:

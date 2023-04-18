@@ -1,6 +1,6 @@
 app:
-  name: AppZ-LogCollectorGL
-  code: LCGL
+  name: GrayLog
+  code: GrayLog
   notify: mniju@ecloudcontrol.com
 
 build:

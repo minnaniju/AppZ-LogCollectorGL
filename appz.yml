@@ -27,7 +27,7 @@ volumes:
 
 properties:
   revision : 33
-  GRAYLOG_MONGODB_URI : mongodb://mongodb-5-0:27017/graylog  
+  GRAYLOG_MONGODB_URI : mongodb://admin:4FTZOx9ACdbAw65WJH1u@mongodb-5-0:27017/graylog  
   GRAYLOG_ELASTICSEARCH_HOSTS : http://elasticsearch-7-1:9200/
   GRAYLOG_ELASTICSEARCH_DISCOVERY_ENABLED : false
   GRAYLOG_PASSWORD_SECRET:
